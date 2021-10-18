@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0
+}
+body{
+    padding:1em
+}
+.hide{
+    display: none;
+}
+.Category{
+    text-align: center;
+    margin:0 0 1em 0;
+}
+.images-single{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    width:100%;
+    margin:0 0 1em 0;
+}
+.double-image{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+.pic{
+    width: 100%;
+    margin:0 0 .5em 0;
+}
+.header{
+    position: unset;
+    width: 100%;
+}
+@media only screen and (min-width:768px) {
+    .menu-bar{
+        margin: 0em 0 1em 0;
+    }
+    .menu-bar>a{
+        margin: 1em;
+        color: #000;
+    }
+}

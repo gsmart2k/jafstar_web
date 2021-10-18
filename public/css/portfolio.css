@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url("../assets/Diwura/DSC_0270.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.portfolios{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.models{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width:60%;
+}
+.models>i{
+    text-align: center;
+    margin:0 1em;
+}
+.models>a{
+    justify-self: flex-end;
+}
+.port-links{
+    margin:0 0 2em 0;
+    font-size: 1.5em;
+    color:#fff;
+    /* animation: anim 2s ease-in infinite ; */
+    font-family: futura md bt;
+}
+.hide{
+    visibility: hidden;
+}
+/* @keyframes anim {
+    from{
+        text-decoration: none;
+    }
+    to{
+        text-decoration: underline;
+        
+    }
+} */
+.msg-icons>i{
+    margin: .1em;
+    padding: .3em;
+    color: #fff;
+    font-size: .8em;
+}
+@media only screen and (min-width:768px) {
+    .menu-bar{
+        margin: 5em 0 3em 0;
+    }
+    .menu-bar>a{
+        color: #fff;
+        cursor: pointer;
+    }
+    .portfolios{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

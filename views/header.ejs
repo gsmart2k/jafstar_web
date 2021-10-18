@@ -1,0 +1,20 @@
+<header class="header">
+    <div class="msg-icons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fas fa-envelope-open"></i>
+    </div>
+    <p id="ownername">Joshua Folowosele</p>
+    <div class="nav-icons">
+        <span class="cart-count-span">   
+            <% if(name){%>
+                <p><%= noofitems %></p>
+            <% }else {%>
+                <p>0</p>
+            <%}%>
+            <a href="/cart"><i id="shoppingiconcolor" class="fas fa-shopping-cart"></i></a>
+        </span>
+        <i class="fas fa-bars"></i>
+    </div>
+</header>
+

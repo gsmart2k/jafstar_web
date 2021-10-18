@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/artstore.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
+</head>
+<body>
+    <%- include ('header.ejs') %>
+    <%- include ('menubar.ejs') %>
+    <div class="Category">
+        <p>Category:</p>
+        <p>Digital Art Painting</p>
+    </div>
+    <p class="hide alertmsg"><%= alertmsg %></p>
+    <div>
+        <% data.forEach(datum => {%>
+        <div class="images-single">
+            <a href="/artstore/<%=datum.Itemname%>"><img class="pic" src="<%= datum.Itemimage %>" alt=""></a>
+            <div>
+                <p><%= datum.Itemname %></p>
+                <p>$<%= datum.Itemprice %></p>
+               
+            <% }) %>
+
+    </div>
+    <footer class="footer">
+        <div class="foot-1">
+            <p>Joshua Ayomide Folowosele</p>
+            <p>photographer | Creative Artist | Editor</p>
+        </div>
+        <div class="divider"></div>
+        <div class="foot-2">
+            <p>@Official_Jafstar</p>
+            <p>jfolowosele@gmail.com</p>
+        </div>
+    </footer>
+</body>
+<script>
+    const alertmsg = document.querySelector(".alertmsg")
+    if(alertmsg.innerText){
+        alert("Item Already In Cart !")
+    }
+</script>
+<script async src="scripts/main.js"></script>
+</html>

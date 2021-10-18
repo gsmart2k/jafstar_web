@@ -1,0 +1,36 @@
+/* FOOTER SECTION HERE */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    bottom:0;
+    height: 30vh;
+    width:100%;
+    text-align: center;
+    background-color: #fff;
+    z-index: 10;
+    /* border-top: 1px solid #000; */
+}
+.foot-1{
+    display: flex;
+    flex-direction: column;
+    margin:1em;
+}
+.divider{
+    height: 1px;
+    background-color: #000;
+    width:20%;
+    margin:0 auto;
+}
+.foot-2{
+    display: flex;
+    flex-direction: column;
+    margin:1em;
+}
+.cart-f{
+    position: absolute;
+    bottom: 0;
+}
+/* FOOTER SECTION STOPS HERE */

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <%- include ('header.ejs') %>
+    <%- include ('menubar.ejs') %>
+    <div class="container">
+    <div class="hero-text">
+        <h1>CONTACT</h1>
+        <p>To Book a session, Photoshop session or Editing Service, Inquiries:</p>
+        <p>Contact me via Email or consultation call to schedule date availability, discuss details, price packages and more</p>
+        <p>jfolowosele@gmail.com | 08102984883<p>
+    </div>
+    <div class="second-container">
+    <div class="input-fields">
+        <div id="firstdiv">
+            <input placeholder="First Name" class="input firstname" type="text">
+            <input placeholder="Last Name" class="input lastname" type="text">
+        </div>
+        <input placeholder="Email" class="input email" type="email">
+        <textarea placeholder="Attach a Message here..." name="textmessage" id="txtarea" cols="30" rows="10"></textarea>
+        <input placeholder="First Name" class="input event-date" type="date">
+        <input placeholder="Venue" class="input venue" type="text">
+    </div>
+    <div class="checkboxes">
+        <p>Which service(s) are you looking for ?</p>
+        <form action="">
+            <div>
+                <input type="checkbox"/>
+                <p>Headshot</p>
+            </div>
+            <div>
+                <input type="checkbox"/>
+                <p>Portrait</p>
+            </div>
+            <div>
+                <input type="checkbox"/>
+                <p>Fashion Shoot</p>
+            </div>
+            <div>
+                <input type="checkbox"/>
+                <p>Creative Shoot</p>
+            </div>
+            <div>
+                <input type="checkbox"/>
+                <p>Family Shoot</p>
+            </div>
+            <div>
+                <input type="checkbox"/>
+                <p>Engagement/Weddings/Anniversary</p>
+            </div>
+            <input value="Send" name="Send" type="button" id="sendbtn"/>
+        </form>
+    </div>
+</div>
+</div>
+    <footer class="footer">
+        <div class="foot-1">
+            <p>Joshua Ayomide Folowosele</p>
+            <p>photographer | Creative Artist | Editor</p>
+        </div>
+        <div class="divider"></div>
+        <div class="foot-2">
+            <p>@Official_Jafstar</p>
+            <p>jfolowosele@gmail.com</p>
+        </div>
+    </footer>
+</body>
+<script src="../scripts/main.js"></script>
+</html>

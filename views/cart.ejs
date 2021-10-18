@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
+</head>
+<body>
+    <%- include ('header.ejs') %>
+    <%- include ('menubar.ejs') %>
+  
+    <h3>Shopping Cart</h3>
+    <div class="cart-head">
+        <p>ITEM</p>
+        <div>
+            <p id="qty-text">QUANTITY</p>
+            <p id="price-text">PRICE</p>
+        </div>
+    </div>
+
+    <!-- CART ITEMS HERE -->
+    <% if(name){%>
+    <% if(data.length != 0){%>
+        <% data.forEach(datum => {%>
+        <div class="cart-item">
+           <a href="/cart/del/<%= datum.Itemname %>"><i class="fas fa-times-circle"></i></a>
+            <div class="item-image">
+                <img src="<%= datum.Itemimage %>" alt="">
+            </div>
+            <p id="title"><%= datum.Itemname %></p>
+            <div class="price-qty">
+                <p id="quantity">-</p>
+                <p id="price">$<%= datum.Itemprice %></p>
+            </div>
+        </div>
+        <%})%>
+        <div class="total-div">
+            <p>TOTAL</p>
+            <h4>$<%= itemstotal %></h4>
+        </div>
+        <div id="purchase-btn-div">   
+             <a href="/checkout"> <button name="pay-btn" id="purchase-btn">PROCEED TO PAYMENT</button></a>
+        </div>
+    <%}else{%>
+        <div class="no-item">
+           <p> NO ITEM IN CART !!!</p>
+            <a href="/artstore">START SHOPPING !!!</a>
+        </div>
+    <%}%>
+    <%}else{%>
+        <div class="no-item">
+            <p> NO ITEM IN CART !!!</p>
+            <p>You Need To Login First !</p>
+             <a href="/artstore">START SHOPPING !!!</a>
+         </div>
+    <%}%>
+
+    
+    <footer class="car footer">
+        <div class="foot-1">
+            <p>Joshua Ayomide Folowosele</p>
+            <p>photographer | Creative Artist | Editor</p>
+        </div>
+        <div class="divider"></div>
+        <div class="foot-2">
+            <p>@Official_Jafstar</p>
+            <p>jfolowosele@gmail.com</p>
+        </div>
+    </footer>
+</body>
+<script async src="../scripts/main.js"></script>
+</html>

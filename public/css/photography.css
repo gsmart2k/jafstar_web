@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image: url("../assets/Fortune/DSC_7417.jpg");
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.header>p{
+   /* margin: 0 0 0 -1em; */
+   font-size: .8em;
+}
+
+.msg-icons{
+    display: flex;
+    flex-direction: row;
+    width:30%;
+    
+    /* padding: em; */
+}
+.msg-icons>i{
+    background: rgb(165, 150, 83);
+    margin: .1em;
+    padding: .3em;
+    color: #fff;
+    font-size: .8em;
+}
+.fa-bars{
+    color: #fff;
+    
+}
+.fa-shopping-cart{
+    color: #fff;
+    margin: 0 0 0em 0;
+}
+.nav-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 30%;
+    font-size: .8em;
+}
+.nav-icons>i{
+    margin:0 0 0 .6em;
+    color:#fff;
+}
+.cart-count-span{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.cart-count-span>p{
+    margin: 0;
+    padding: 0;
+    color:#fff;
+    font-size: .5em;
+}
+/* 
+<link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> */
+
+
+.sect-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:4em 0 0 0;
+}
+.sect-2>a{
+    padding:1em;
+    margin:.5em 0;
+    background:rgb(165, 150, 83);
+    opacity: 80%;
+    text-decoration: none;
+    color: #000;
+}
+.sect-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height:35vh;
+    width:-20%;
+    margin: 4em 2em 0 0;
+    color:#fff;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 2em;
+}
+#ownername{
+    color:#fff;
+}
+
+@media only screen and (min-width:500px) {
+    body{
+        background-image: url("/assets/Fortune/DSC_7417.jpg");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .menu-bar{
+        margin: 3em 0 0 0;
+    }
+    .menu-bar>a{
+        margin: 1em;
+        color: #fff;
+    }
+}

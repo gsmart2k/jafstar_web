@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+h3{
+    margin: 1em 1rem 1rem 1rem;
+}
+.no-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.no-item > p{
+    width:100%;
+    text-align: center;
+    font-weight: bold;
+    font-family: futura;
+    font-size: 3em;
+}
+.no-item > a{
+    text-decoration: none;
+    color:#000;
+    padding:1em;
+    text-align: center;
+    width:60%;
+    margin:.5em;
+    border:2px solid #000;
+    font-family: futura bk bt ;
+}
+.cart-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin:0 auto;
+    padding:0 0 1em 0;
+}
+.cart-head>p{
+    width:65%;
+    font-size: .7em;
+}    
+#qty-text{
+    margin: 0 20% 0 0;
+}
+#price-text{
+   /* justify-self: flex-end;
+   align-items: flex-end; */
+}
+.cart-head>div{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 30%;
+    font-size: .7em;
+}
+.total-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:.5em;
+    width:100%;
+    font-size: 1.5em;
+    font-family: futura bk bt;
+}
+.total-div >p{
+    margin:1em 0 0 0 ;
+}
+
+.total-div > h4{
+    font-weight: bold;
+    /* font-size: 1.5em; */
+    margin:1em 0 0 0;
+}
+.cart-item{
+    display: flex;
+    flex-direction: row;
+    padding:.5em .5em .5em 0;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+    min-height:8em;
+    border-top: 1px solid #000;
+    border-bottom: .5px solid #000;
+}
+i{
+    margin: 0 .5em 0 0;
+    font-family: futura md bt;
+}
+.item-image{
+    width:20%;
+    max-width:20%;
+    margin:0 .5em 0 0;
+}
+#title{
+    width:35%;
+    font-size: .7em;
+    font-weight: bold;
+}
+#price{
+    justify-self: flex-end;
+}
+#quantity{
+    justify-self: center;
+    align-self: center;
+}
+.item-image>img{
+    width:100%;
+}
+.price-qty{
+    display: flex;
+    flex-direction: row;
+    width:30%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#purchase-btn{
+    display: block;
+    background: rgb(39, 36, 34);
+    outline: none;
+    border: none;
+    color:#fff;
+    padding:1em;
+    width:90%;
+    margin: 0 auto;
+    text-align: center;
+}
+#purchase-btn-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin:1em;
+}
+.fa-times-circle{
+    color: #000;
+}
+.header>p{
+    color: #000;
+}
+.shoppingiconcolor{
+    color:#000;
+}

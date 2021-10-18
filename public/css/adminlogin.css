@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../assets/adminloginbg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.SEC-1{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;    
+}
+.logo{
+    width:4em;
+    margin:1em;
+}
+.SEC-1>p{
+    font-size: 1em;
+    color:#fff;
+    font-family: futura bk bt;
+}
+.SEC-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin:0 auto;
+}
+.SEC-2>form{
+    display:flex;
+    flex-direction: column;
+    padding: 1em;
+    margin:0 auto;
+    width:100%;
+}
+.SEC-2>form>input{
+    padding:1em;
+    margin: .5em auto;
+    width:100%;
+    background: none;
+    border: 2px solid #fff;
+    color:#fff;
+}
+::placeholder{
+    color:#fff
+}
+#login-btn{
+    background:#d81c0e;
+    color:#fff;
+    outline: none;
+    border: none;
+    padding:1em;
+    margin: .5em auto;
+    width:100%;
+}
+.message{
+    padding: 1em;
+    color:#fff;
+    width:100%;
+    text-align: center;
+    opacity: 80%;
+}
+.hide{
+    visibility: hidden;
+}
+@media only screen and (min-width:768px) {
+    body{
+        display: none;
+    }
+}

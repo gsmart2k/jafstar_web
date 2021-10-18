@@ -1,0 +1,9 @@
+<% if(name){%>
+    <a href="/artstore/delete/<%=datum.name%>"><i class="fas fa-times-circle"></i></button>
+    <a href="#"><i class="fas fa-edit"></i></a>
+    <form class="hide" method="GET" action="/portfolio/edit/<%= datum.name%>/">
+        <input value="" type="text" name="url" placeholder="New Name">
+        <button>DONE</button>
+    </form>
+     <%} else { %>
+    <%}%>

@@ -1,0 +1,109 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:1em;
+    margin:0 0 0 0;
+    /* position: fixed; */
+    top:0;
+    width: 100%;
+}
+.header>p{
+    color:#fff;
+    font-family: futura md bt;
+}
+.cart{
+    margin:1em;
+}
+.menu-bar{
+    background-image: url("../assets/Landscape\ Painting_Chaotic\ Night.jpg");
+    background-blend-mode: hue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 10;
+    display: none;
+    animation: animateoff .5s;
+}
+.show{
+    display: flex;
+    animation: animate .5s;
+}
+@keyframes animate {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+@keyframes animateoff {
+    from{
+        width: 70%;
+    }
+    to{
+        width: 0%;
+    }
+}
+.hide{
+    display: none;
+}
+.menu-bar>a{
+    margin: 1em;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    font-family: futura md bt;
+}
+.ham-cancel{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 1.2em;
+    color:#fff  !important;
+}
+
+@media only screen and (min-width:768px) {
+    .menu-bar{
+        background-image: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+        position: unset;
+        margin: 2em 0 2em 0;
+        animation: none;
+        height: unset;
+    }
+    .menu-bar>a{
+        margin: .5em;
+        font-size: 1em;
+        text-decoration: none;
+        color: #000;
+        font-family: futura md bt;
+    }
+    .menu-bar>a:hover{
+       text-decoration: underline;
+    }
+    .fa-bars{
+       visibility: hidden;
+    }
+    .ham-cancel{
+        visibility: hidden;
+    }
+    
+}

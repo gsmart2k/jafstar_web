@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#josh{
+    color: #000;
+}
+body{
+    background:rgb(247, 244, 244);
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    padding: 1em;
+}
+.hero-text > h1{
+    font-size: 2em;
+}
+.contact{
+    width: 100%;
+    position: unset;
+}
+.hero-text > p{
+    font-size: 1em;
+    margin: 1em 0 1em 0;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em;
+}
+.input-fields>input{
+    margin: .5em 0;
+}
+#firstdiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#firstdiv>input{
+    margin: .5em 0;
+}
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    padding: 1em;
+}
+.checkboxes>form{
+    display: flex;
+    flex-direction: column;
+    margin:.3em 0;
+}
+.checkboxes>form>input{
+    display: flex;
+    flex-direction: column;
+}
+.checkboxes>form>div{
+    display: flex;
+    flex-direction: row;
+    margin: .2em;
+}
+.checkboxes>form>div>p{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 1em;
+    font-size: .8em;
+}
+.input{
+    padding:.7em;
+}
+.firstname{
+    width: 50%;
+}
+.lastname{
+    width: 50%;
+}
+#sendbtn{
+    background-color: #000;
+    padding: .5em;
+    color: #fff;
+    width:100%;
+    border: none;
+    outline: none;
+    margin:.5em auto;
+}
+
+@media only screen and (min-width:768px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-items: flex-end;
+    }
+    .hero-text{
+        width: 40%;
+    }
+    .second-container{
+        width: 55%;
+    }
+    .menu-bar{
+        margin: 3em 0 0 0;
+    }
+    .menu-bar>a{
+        margin: 1em;
+        color: #000;
+    }
+    
+}
