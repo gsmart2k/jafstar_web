@@ -20,7 +20,16 @@ paypal.configure({
 
 // var paystack = require("paystack-api")("sk_test_4b02091e5157d69965f309d426cb82d435029f2f");
 
-mongoose.connect("mongodb://localhost/JafstartDb",{useNewUrlParser:true,useFindAndModify:false, useUnifiedTopology:true})
+const uri = "mongodb+srv://Gsmart:Fatherwell2000@cluster0.ojslx.mongodb.net/JafstarDb?retryWrites=true&w=majority"
+
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => {
+  console.log("MongoDB Connected…")
+})
+.catch(err => console.log(err))
 
 mongoose.connection.once("open",()=>{
     console.log("Connection has been made!!!")
