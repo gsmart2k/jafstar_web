@@ -20,9 +20,6 @@
     "paypal-rest-sdk": "^1.8.1",
     "paystack-api": "^2.0.6"
   },
-  "engines":{
-    "node":">=10.0.0.0"
-  },
   "devDependencies": {},
   "scripts": {
     "start": "node app.js",
