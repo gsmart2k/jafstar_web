@@ -528,8 +528,6 @@ app.post("/register", (req,res)=>{
     })
     Users.find({Email:userinfo.Email}).then((result)=>{
         if(result.length != 0){
-            console.log(result)
-            console.log("There is an Error !")
             res.render("registrationpage.ejs",{msg:"Sorry That Email Already Exist"})
         }else{
             newUser.save().then(()=>{
@@ -537,17 +535,7 @@ app.post("/register", (req,res)=>{
             })
         }
     })
-    Users.find({Phonenumber:userinfo.Number}).then((result)=>{
-        if(result.length != 0){
-            console.log(result)
-            console.log("There is an Error !")
-            res.render("registrationpage.ejs",{msg:"THis Phone Number is already associated with an account !"})
-        }else{
-            newUser.save().then(()=>{
-                res.redirect("/login")
-            })
-        }
-    })
+    
 })
 app.get("/login", (req,res)=>{
     res.render("adminlogin.ejs",{msg:""})
